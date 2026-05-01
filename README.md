@@ -19,14 +19,15 @@ LINK86 KFILE.OBJ
 
 ## Execution  
 
-In order to use this application correctly you should know what data types are used for each field and their order in the record.  
+In order to use this application correctly you should know what data types are used for each field and their order in the record. In the next example the first four bytes of the records are packed decimals and the subsequent 20 bytes are characters.
 
 E.g.,
 
 ```shell
 KFILE P4 C20 INVNTRS.DAT
 ```
-The previous example decodes the first four bytes from packed decimal and prints the data as string characters, also prints the subsequent twenty bytes as string characters. By default the returned fields are separated by commas.  
+  
+This example decodes the first four bytes from packed decimal and prints the data as string characters, also prints the subsequent twenty bytes as string characters. By default the returned fields are separated by commas.  
 
 Result:  
 ```
